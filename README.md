@@ -1,14 +1,31 @@
-# Welcome to your CDK TypeScript project
+#
 
-This is a blank project for CDK development with TypeScript.
+## Docker build
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+```bash
+docker build -t flask-app .
+```
 
-## Useful commands
+and run
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+```bash
+docker run -d -p 3000:3000 flask-app:latest
+```
+
+## Docker commands
+
+```bash
+docker ps
+```
+
+stop all running containers
+
+```bash
+docker kill $(docker ps -q)
+```
+
+delete all docker images
+
+```
+docker system prune -a
+```
