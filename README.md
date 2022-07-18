@@ -1,5 +1,6 @@
 # Hello ECS with a Flask Web App 
 
+![aws_devops-ecs drawio](https://user-images.githubusercontent.com/20411077/179500956-425bfa52-b434-46b3-a7f0-0d9914eb8dce.png)
 
 ## Create an ECS Cluster 
 ```tsx
